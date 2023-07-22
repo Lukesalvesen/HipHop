@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class="contact"><a href="tel:+27 74 249 6433"><b>Phone: +27 74 249 6433 </b></a>
-    <a href="mailto:hjalmarvolker@gmail.com"><b>Email: hjalmarvolker@gmail.com</b></a>
-    <a href="https://www.instagram.com/hip_hop_truckin/" target="_blank" ><b>Instagram: Hip Hop Truckin'</b></a>
-    <a href="https://www.facebook.com/profile.php?id=100094396506365&sk=about"><b>Facebook: Hip Hop Truckin'</b></a>
-</div>
+  <head>
+    <link rel="stylesheet" href="page.css" />
+  </head>
+  <header class="header">
 
-<head>
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Hip Hop Truckin'</title>
-    <div class="head">
+    <div class="center">
+        <h1 class="logo">
+          <img src="./img/logo.jpeg" alt="" height="250px" width="auto" />
+        </h1>
+      </div>
 
-        <div class="center"><h1 class="logo"><img src="./img/logo.jpeg" alt="" height="250px" width="auto" ></h1></div>
-        <h2 class="moto"><i>"Our service keeps the wheels turning"</i></h2>
+
+    <div class="contact">
+      <div class="phone">
+        <a href="tel:+27 74 249 6433"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEUAAAD////8/PwEBAT5+fnz8/P29vbl5eXw8PCHh4dWVlZ5eXmMjIzAwMBtbW26urodHR0pKSlKSkpjY2PHx8c3NzeUlJTZ2dl9fX0xMTHT09Ovr6/r6+sRERGmpqabm5tRUVFycnJERERISEg7OzssLCwPDw8kJCQbGxuhoaFfX18GS5xfAAAFfElEQVR4nO2ciXLaMBCGLckXN8UGAjgcbRKSvv8DVrIhQLAsETvVMf/X6dC0aWf/7mq1Wh1BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAz8FMG/BzsCtx/sqcD7ab3WFl2oyfoHRalsdEEI3Gpu3pHq7w14hcWHKNzKdY5VoOEaFXEslkatqojtkSSq8U8l8XB9M2dQcLjvmtAyuGpg3rjllC6J1CSuLfpg3rij0fguG9QkpGpi3rBBZkUV2ICsIX09Z1AAv+UHofoid2ps3rgpeoZgyeSUxb1xY+p78vZerKZLN3v0QdNXiQK/wwbV9rBkSWZSqFzofpc9IQo6VG19cZiyYPlgxMm9iSpjRT4fqkHysVpqZNbElTIj3xy7SNrXhVDkNCnkwb2YqZUh9fCZs2shV9DYVL00a2ItNQGDk9I2bqcUjJX9NWtkFLYc+0lW3o6yjcmLayDTq5lKxNW9mGlY5Cp6uaN50odXt5oVHTENI3bWUb1JU3cXwBpVoAlyxMW9mGtY7CicvdqIlaH3XbhwsdH85MW9mGsYYLR05v6+9VswUlxdy0ka04RkofOr20CFTNNu7hg8shKmhKpqJL5XaXRjBsjlH3BTZ3auKB6yHKmabyCA1dTzIV9alG7Aqne9O2dcNG5sP0j2nTOkJS1dDQm5MmR8kS0en+0y21A5G6vey95aOuk+GVQsmM6PrO6DV1nQw+W7i9b3hD7Xwhzpm4X8+ckIRp5I3AIJAUbk63Z65hwbZeYfFs2rSOYMFMcl5h4XSD5gZJ9R37oo/xZXCdDx3fObxBVpvSmTdhKuvW5KYN64y9RKEPfZoTa0k6LaZ+3A1iwVPtQVqueuLLjPGW1KbTkJKxJwqDnSSbun1O4Yb7OzO+5VPZTiL15n7XeyE7TevJvF+WbpJATby4a8m9VEji1JOhyMTlEokPqePnhC/Ijp5Qx49jXOjLbiHy33f6kOmFSX2clhnIhw4xC1axLJ1SEvuwmShb7FduDP14Z0GabMSPzLR1XTAPG+4jxh6sM1jQkwrkgUrdTzfcRbWPK1QKqR9V+KpoOBld3guWRepnu8P2UG44rii8OJEK5D+nMydOakpOZ5wDdSndWMzWvPqJ1r3X/2nt4zDR5Jcu+AVpnwfkrSfFl6v88zuS7b76p2yN17m0tKkIe1/HGv8qS8/jt/xINvbGK7f2b5M+MW1s7/7WhnwuoM+vbBRbiy9qDIn8MZCS9eriRv45zSXfNjwGlr43pbinT0l66fez8gGf2u8iJJpYWc6ypoR6Nj7/TJlZXN/iEVUQ/1hauvnR+CJISXqq4Q6h4v+CJAP7EiuTb9ZcsRapZNf4dsiJpG9dqcOC6VJlOf/jJE8I1bniZ+UzMMcl0XhyQZuthUn1OSGNQ+whqIXXGJnwYmc+pJbeJ16rpv5HsLKXxfLmKvwhLDzQKTKDpIf6Ld5NC6pn211CtbS4adh2exQ797B4oI6VV/j0oHY+jSbG4lzrQrRaYXQ0rUbOhOgUZyqFobWvM4hXhiUHiR9SGNt6Or5c+HQRqYltdekXhmHLAofamUuvmK1bDkXLN69EUu1pvRQiw4lXw1aj764ZQxo6cPJIuDH7XsahIRnYtwK+o2rmH7SefPmqkCzu9gLs5bmXnnZptPU5d+7/rVcQnRbbJUTdEljGWk/9uOsVW+uaiTpkeelGpSdDhx8+nw6X6mYcJaGjTzNUiXH2ocysyd7JEL2iv00qX915r1xwTby45PfyNEnOMXmjkBSZ6w4UVApexpu79Brvni3s5bdiPh5+5MskKaK0SNbloVSv9F14e331YvjVchWUfsUnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBP/AIq5MazfPDRdAAAAAElFTkSuQmCC"
+            alt=""
+        /></a>
+      </div>
+      <div class="email">
+        <a href="mailto:hjalmarvolker@gmail.com"
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyA1QI3U14qcACD8qVRpdzYhiXgTBxg8Bm-A&usqp=CAU"
+            alt=""
+        /></a>
+      </div>
+      <div class="insta">
+        <a href="https://www.instagram.com/hip_hop_truckin/" target="_blank"
+          ><img
+            src="data:image/jpeg;base64,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"
+            alt=""
+        /></a>
+      </div>
+      <div class="face">
+        <a
+          href="https://www.facebook.com/profile.php?id=100094396506365&sk=about"
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwgnhLkhd-aF17tlyHodA_ByZxorTuDcqpsg&usqp=CAU"
+            alt=""
+        /></a>
+      </div>
     </div>
-</head>
-<body>
+   
+  </header>
+
+  <title>Hip Hop Truckin'</title>
+  <div class="head">
+    <h2 class="moto"><i>"Our service keeps the wheels turning"</i></h2>
+  </div>
+  <body>
     <div class="about">
-
-        <h2>About us</h2>
-        <p class="content">
-            We are a family run logistics company based in the sunny city of Durban. From small beginnings we have steadily grown and continue to provide top class service for our customers.
-            We have recently expanded our fleet and are looking for new routes and businesses to join our Hip Hop Family.
-        </p>
-        <p class="image"><img src="img/fleet.jpeg" width="70%"></p>
+      <a href="about.html"><h2>About Us</h2></a>
     </div>
-    <div class="services">
-        <h2>
-            Our Services
-        </h2>
-        <div class="second">
 
-            <h3>
-                We make your logistical nightmares a thing of the past!!!
-            </h3>
-            <p class="content">
-                We have various routes in and around KZN. We also have a route from DBN to JHB.
-            </p>
-        </div>
-        <p class="image">
-            <img src="./img/fleet.jpeg" alt="" width="70%">
-        </p>
-    </div>
     
-</body>
-<div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.173762309933!2d30.82585127502088!3d-29.743683917393827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6fcea98098c0f%3A0x12bfdf8bdea41df9!2s27%20Berlin%20Dr%2C%20Waterfall%2C%203652%2C%20South%20Africa!5e0!3m2!1sen!2suk!4v1689513146333!5m2!1sen!2suk" width="70%" height="200" style="border:2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+    <div class="services">
+      <a href="services.html"><h2>Our Services</h2></a>
+    </div>
+
+<div class="contact-us">
+  <a href="contact.html"><h2>Get in Touch</h2></a>
 </div>
 
-<footer>
-    <p>
-    Hip Hop Truckin' 2023®️
-    </p>
+  </body>
+  
 
-</footer>
+  <footer>
+    <p>Hip Hop Truckin' 2023®️</p>
+  </footer>
 </html>
+
