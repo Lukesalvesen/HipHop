@@ -8,11 +8,13 @@ header {
   }
   
   .contact img {
-    width: 50px;
-    height: 50px;
-    margin: 20px;
+    width: 80px;
+    height: 80px;
+    margin: 40px;
     border: 1px solid white;
   }
+
+  .contact img:hover{border-color: yellow;}
   
   .contact {
     display: inline-flex;
@@ -20,6 +22,8 @@ header {
   
   .moto {
     text-align: center;
+    font-size: 50px;
+    margin: 20px;
   }
   
   .about {
@@ -72,5 +76,36 @@ header {
     border: 10px solid yellow;
   }
   
+  .contact-us {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin: 30px 0px;
+  }
+  
+  .contact-us a {
+    color: seashell;
+    text-decoration: none;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .contact-us a:hover {
+    color: yellow;
+    border: 10px solid yellow;
+  }
+  
+  footer{background-color: black;
+  color: seashell;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;}
   
   
